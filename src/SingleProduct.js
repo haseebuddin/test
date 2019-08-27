@@ -16,13 +16,13 @@ class SingleProduct extends Component {
     }
 
     componentWillMount() {
-        const {abc}=this.props.match.params;
+        const {id}=this.props.match.params;
         console.log("match ",this.props.match);
-         console.log("abc value",abc);
+         console.log("abc value",id);
 
 
 
-        axios.get('/products/'+abc)
+        axios.get('/products/'+id)
             .then((response) =>{
                 console.log("response",response);
                 return response.data

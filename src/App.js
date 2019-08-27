@@ -23,7 +23,7 @@ class App extends Component{
                 <Route path='/about' component={About} />
                 <Route path='/products' component={Products} />
 
-                <Route path='/product/:abc' component={Product} />
+                <Route path='/product/:id' component={Product} />
             </Router>
        </Container>
     )
